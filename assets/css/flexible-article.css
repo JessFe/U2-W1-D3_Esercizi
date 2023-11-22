@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #612406;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 1rem;
+}
+
+article {
+  background-color: #fbf7e3;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  overflow: hidden;
+}
+
+article div:nth-child(2) {
+  padding-left: 2rem;
+  line-height: 1.5rem;
+}
+
+article div h2 {
+  padding-block: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  article {
+    flex-direction: column;
+  }
+
+  article div:nth-child(1) {
+    order: 2;
+  }
+}
